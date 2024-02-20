@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/codespace/.nuget/packages/": {}
+    "C:\\Users\\ernes\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/Projekts-CS-/ConsoleApp1/ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\ernes\\Desktop\\coding\\ProjectsCS\\Projekts-CS-\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "/workspaces/Projekts-CS-/ConsoleApp1/ConsoleApp1.csproj",
-      "packagesPath": "/home/codespace/.nuget/packages/",
-      "outputPath": "/workspaces/Projekts-CS-/ConsoleApp1/obj/",
+      "projectPath": "C:\\Users\\ernes\\Desktop\\coding\\ProjectsCS\\Projekts-CS-\\ConsoleApp1\\ConsoleApp1.csproj",
+      "packagesPath": "C:\\Users\\ernes\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ernes\\Desktop\\coding\\ProjectsCS\\Projekts-CS-\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/codespace/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ernes\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

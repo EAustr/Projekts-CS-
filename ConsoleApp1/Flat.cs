@@ -13,9 +13,8 @@ class Flat{
         this.people = people;
     }
 
-
     // Pievieno dzīvokli, nevar but vairak par 3 dzīvokļiem
-    public void addFlat(int flat){
+    public void addFlat(){
         if (flat >= 5){
             Console.WriteLine("You can't have more than five flats");
         } else if (flat == 0){
@@ -27,7 +26,7 @@ class Flat{
         }
     }
 
-    public void removeFlat(int flat){
+    public void removeFlat(){
         if (flat == 0){
             Console.WriteLine("You cant have less than 0 flats!");
         } else {
@@ -36,6 +35,57 @@ class Flat{
         }
     }
 
+    public void addPeople(){
+        if (people >= 5){
+            Console.WriteLine("You can't have more than five people");
+        } else if (people == 0){
+            Console.WriteLine("You don't have any people, people added!");
+            people++;
+        } else {
+            Console.WriteLine("You have " + people + " people, people added!");
+            people++;
+        }
+    }
+
+    public void removePeople(){
+        if (people == 0){
+            Console.WriteLine("You cant have less than 0 people!");
+        } else {
+            Console.WriteLine("You have " + people + " people, people removed!");
+            people--;
+        }
+    }
+
+    public void addFloors(){
+        if (floors >= 10){
+            Console.WriteLine("You can't have more than 10 floors");
+        } else if (floors == 0){
+            Console.WriteLine("You don't have any floors, floor added!");
+            floors++;
+        } else {
+            Console.WriteLine("You have " + floors + " floors, floor added!");
+            floors++;
+        }
+    }
+
+    public void removeFloors(){
+        if (floors == 0){
+            Console.WriteLine("You cant have less than 0 floors!");
+        } else {
+            Console.WriteLine("You have " + floors + " floors, floor removed!");
+            floors--;
+        }
+    }
+
+    public void CompareFlats(string owner, int flat, int floors, int people){
+        if (owner == this.owner && flat == this.flat && floors == this.floors && people == this.people){
+            Console.WriteLine("Flats are the same!");
+        } else {
+            Console.WriteLine("Flats are not the same!");
+        }
+    }
+    
+
     // Izvada dzīvokļa īpašnieku, dzīvokļa numuru, stāvus, un cilvēkus
     public void printFlat(){
         Console.WriteLine("Flat owner: " + owner);
@@ -43,5 +93,7 @@ class Flat{
         Console.WriteLine("Floors: " + floors);
         Console.WriteLine("People: " + people);
     }
+
+
     
 }
