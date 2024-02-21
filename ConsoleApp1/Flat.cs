@@ -13,7 +13,7 @@ class Flat{
         this.people = people;
     }
 
-    // Pievieno dzīvokli, nevar but vairak par 3 dzīvokļiem
+    // Pievieno dzīvokli, nevar but vairak par 5 dzīvokļiem
     public void addFlat(){
         if (flat >= 5){
             Console.WriteLine("You can't have more than five flats");
@@ -76,24 +76,4 @@ class Flat{
             floors--;
         }
     }
-
-    public void CompareFlats(string owner, int flat, int floors, int people){
-        if (owner == this.owner && flat == this.flat && floors == this.floors && people == this.people){
-            Console.WriteLine("Flats are the same!");
-        } else {
-            Console.WriteLine("Flats are not the same!");
-        }
-    }
-    
-
-    // Izvada dzīvokļa īpašnieku, dzīvokļa numuru, stāvus, un cilvēkus
-    public void printFlat(){
-        Console.WriteLine("Flat owner: " + owner);
-        Console.WriteLine("Flats owned: " + flat);
-        Console.WriteLine("Floors: " + floors);
-        Console.WriteLine("People: " + people);
-    }
-
-
-    
 }
