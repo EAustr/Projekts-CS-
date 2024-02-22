@@ -25,7 +25,7 @@ class Flat{
             flat++;
         }
     }
-
+    // Noņem dzīvokli, nevar but mazak par 0 dzīvokļiem
     public void removeFlat(){
         if (flat == 0){
             Console.WriteLine("You cant have less than 0 flats!");
@@ -34,7 +34,7 @@ class Flat{
             flat--;
         }
     }
-
+    // Pievieno cilvēku, nevar but vairak par 5 cilvēkiem
     public void addPeople(){
         if (people >= 5){
             Console.WriteLine("You can't have more than five people");
@@ -46,7 +46,7 @@ class Flat{
             people++;
         }
     }
-
+    // Noņem cilvēku, nevar but mazak par 0 cilvēkiem
     public void removePeople(){
         if (people == 0){
             Console.WriteLine("You cant have less than 0 people!");
@@ -55,7 +55,7 @@ class Flat{
             people--;
         }
     }
-
+    // Pievieno stāvu, nevar but vairak par 10 stāviem
     public void addFloors(){
         if (floors >= 10){
             Console.WriteLine("You can't have more than 10 floors");
@@ -67,7 +67,7 @@ class Flat{
             floors++;
         }
     }
-
+    // Noņem stāvu, nevar but mazak par 0 stāviem
     public void removeFloors(){
         if (floors == 0){
             Console.WriteLine("You cant have less than 0 floors!");

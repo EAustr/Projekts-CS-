@@ -6,6 +6,7 @@ class Program{
         Regex nameRegex = new Regex("^[a-zA-Z]+$");
         Regex numberRegex = new Regex("^[0-9][0-9]*$");
 
+        // izveido masīvu kur glabāt dzīvokļu īpašniekus(tikai 5 dzīvokļi var but vienlaikus)
         Flat[] owners = new Flat[5];
 
 
@@ -61,30 +62,37 @@ class Program{
                     Console.WriteLine("Choose an action: \n1.Add flat\n2.Remove flat\n3.Add people\n4.Remove people\n5.Add floors\n6.Remove floors");
                     string action2 = Console.ReadLine();
                     switch(action2) {
+                        // izsacu funkcijas no Flat.cs kas pievieno vienu dzīvokli
                         case "1":
                             newFlat.addFlat();
                             break;
+                        // izsacu funkcijas no Flat.cs kas noņem vienu dzīvokli
                         case "2":
                             newFlat.removeFlat();
                             break;
+                        // izsacu funkcijas no Flat.cs kas pievieno vienu cilvēku
                         case "3":
                             newFlat.addPeople();
                             break;
+                        // izsacu funkcijas no Flat.cs kas noņem vienu cilvēku
                         case "4":
                             newFlat.removePeople();
                             break;
+                        // izsacu funkcijas no Flat.cs kas pievieno vienu stāvu
                         case "5":
                             newFlat.addFloors();
                             break;
+                        // izsacu funkcijas no Flat.cs kas noņem vienu stāvu
                         case "6":
                             newFlat.removeFloors();
                             break;
-                            break;
                         default:
+                        // ja ievadītais skaitlis nav no 1-6 tad izvada kļūdu
                             Console.WriteLine("Invalid input");
                             break;
                     }
                     break;
+                // Izveido jaunu dzīvokli
                 case "2":
                     if (currentOwnerIndex >= 4){
                         Console.WriteLine("You can't have more than five flats");
@@ -124,15 +132,17 @@ class Program{
                         newFlat = owners[currentOwnerIndex];
                     }
                     break;
+                // Izvada visus dzīvokļus
                 case "3":
                     for (int i = 0; i <= currentOwnerIndex; i++){
                         Console.WriteLine("Owner:" + owners[i].owner + " Flats:" + owners[i].flat + " Floors:" + owners[i].floors + " People:" + owners[i].people);
                     }
                     break;
+                // Iziet no programmas
                 case "4":
                     running = false;
                     break;
-
+                // Ja ievadītais skaitlis nav no 1-4 tad izvada kļūdu
                 default:
                     Console.WriteLine("Invalid input");
                     break;
